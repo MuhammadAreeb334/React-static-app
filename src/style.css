@@ -45,7 +45,7 @@ ul{
     padding: 10px 50px;
 }
 .list{
-    padding: 10px;
+    line-height: 3rem;
 }
 .App{
     height: 100vh;
