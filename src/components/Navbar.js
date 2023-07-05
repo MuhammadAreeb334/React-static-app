@@ -4,7 +4,7 @@ function Navbar() {
     return(
         <nav className="navbar-Container">
             <div className="navbar">
-                <img className="logo" src= {ReactLogo} />
+                <img className="logo" src= {ReactLogo}  alt="logo of React"/>
                 <h1 className="heading-left">ReactFacts</h1>
             </div>
             <h1 className="heading-right">React-course - project 2</h1>

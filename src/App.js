@@ -1,9 +1,11 @@
 import Navbar from "./components/Navbar"
+import MainContent from "./components/Main"
 
 function App() {
   return (
     <div className="App">
       <Navbar />
+      <MainContent />
     </div>
   );
 }
