@@ -3,6 +3,9 @@
     padding: 0;
     font-family: 'Gothic A1', sans-serif;
 }
+body{
+    background-color: #101010;
+}
 .navbar-Container{
     display: flex;
     align-items: center;
@@ -29,23 +32,33 @@
     font-weight: 700;
 }
 .Mian-conatiner{
-    padding: 100px 30px;
-    background-color: #101010;
+    padding: 57px 27px;
     color: #fff;
-
+    background-image: url("Images/react-icon-large.png");
+    background-repeat: no-repeat;
+    background-position: right 75%;
+    background-size: 200px;
 }
 .Mian-conatiner h1{
-    padding-bottom: 30px;
+    margin: 0px;
+    letter-spacing: -0.05em;
 }
 ul{
-    padding: 10px 50px;
+    margin-top: 46px;
+    padding-left: 30px;
+    max-width: 400px;
 }
 .list{
-    line-height: 3rem;
+    line-height: 19px;
+    padding-block: 10px;
 }
-.App{
+.list::marker{
+    color: #61dafb;
+    font-size: 1.5rem;
+}
+/* .App{
     height: 100vh;
     display: flex;
     flex-direction: column; 
     justify-content: center;
-}
+} */
