@@ -1,12 +1,29 @@
 import ReactLogo from "../Images/react-logo.png"
 
-function Navbar() {
-    return(
-        <nav className="navbar-Container">
-            <img className="logo" src= {ReactLogo}  alt="logo of React"/>
-            <h1 className="heading-left">ReactFacts</h1>    
-            <h1 className="heading-right">React-course - project 2</h1>
+
+export default function Navbar(props) {
+    return (
+         <nav 
+            className={props.darkMode ? "dark": ""}
+        >
+            <img 
+                className="nav--logo_icon"
+                src={ReactLogo}
+            />
+            <h3 className="nav--logo_text">ReactFacts</h3>
+            
+            <div 
+                className="toggler" 
+            >
+                <p className="toggler--light">Light</p>
+                <div 
+                    className="toggler--slider"
+                    onClick={props.toggleDarkMode}
+                >
+                    <div className="toggler--slider--circle"></div>
+                </div>
+                <p className="toggler--dark">Dark</p>
+            </div>
         </nav>
     )
 }
-export default Navbar;
